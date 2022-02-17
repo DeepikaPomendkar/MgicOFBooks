@@ -1,5 +1,7 @@
 public class Book {
-
+    /*
+    Book class holds the Attributes associated with a book and the getters and setters required to access the private variables
+     */
     private String bookName;
     private String authorName;
     private String description;

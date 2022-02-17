@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class User {
+    /* This class represents the various attributes associated with a user and
+    the respective getters and setters to access the private variables
+
+     */
 
         private String userName;
         private String userId;

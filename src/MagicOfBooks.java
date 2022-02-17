@@ -1,7 +1,11 @@
 
 import java.util.*;
 public class MagicOfBooks {
-    public static CreateData data = new CreateData();
+
+    /*** Base Class where all the functions are initialized and
+     * a recursive menu is provided for the user to select from various functionality mentioned in the pdf.
+    */
+     public static CreateData data = new CreateData();
     public static ArrayList<User> users;
     public static ArrayList<Book> books;
 
@@ -31,7 +35,7 @@ public class MagicOfBooks {
         }
     }
 
-     public static void main(String args[]){
+     public static void main(String[] args){
          MagicOfBooks mg = new MagicOfBooks();
          Scanner sc= new Scanner(System.in);
          users = data.createUser();

@@ -1,10 +1,13 @@
 
 import java.util.*;
 public class CreateData {
-
+    /*  This class is used to create Dummy data.
+        In a real world scenario,
+        This class won't exist explicitly and will be replaced by a class which access a database like sql from which data will be extracted
+     */
 
     public ArrayList<Book> createBooks(){
-        ArrayList<Book> books = new ArrayList<Book>();
+        ArrayList<Book> books = new ArrayList<>();
         Book book1 = new Book("Harry Potter 1", "JKRowling", "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.","1");
         Book book2 = new Book("Harry Potter 2", "JKRowling", "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.","2");
         Book book3 = new Book("Harry Potter 3", "JKRowling", "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.","3");
@@ -19,16 +22,16 @@ public class CreateData {
     }
 
     public ArrayList<User> createUser(){
-        ArrayList<User> users = new ArrayList<User>();
+        ArrayList<User> users = new ArrayList<>();
         ArrayList<Book> books = createBooks();
 
         // Create Dummy User 1
         User user1 = new User("A","A1","A@gmail.com","A@123");
-        ArrayList<Book> completedUser1=new ArrayList<Book>();
+        ArrayList<Book> completedUser1=new ArrayList<>();
         completedUser1.add(books.get(0));
-        ArrayList<Book> favUser1=new ArrayList<Book>();
+        ArrayList<Book> favUser1=new ArrayList<>();
         favUser1.add(books.get(0));
-        ArrayList<Book> newBookUser1=new ArrayList<Book>();
+        ArrayList<Book> newBookUser1=new ArrayList<>();
         newBookUser1.add(books.get(1));
         user1.setCompleted(completedUser1);
         user1.setFavourite(favUser1);
@@ -36,11 +39,11 @@ public class CreateData {
 
         // Create Dummy User 2
         User user2 = new User("B","B1","B@gmail.com","B@123");
-        ArrayList<Book> completedUser2=new ArrayList<Book>();
+        ArrayList<Book> completedUser2=new ArrayList<>();
         completedUser2.add(books.get(2));
-        ArrayList<Book> favUser2=new ArrayList<Book>();
+        ArrayList<Book> favUser2=new ArrayList<>();
         favUser2.add(books.get(2));
-        ArrayList<Book> newBookUser2=new ArrayList<Book>();
+        ArrayList<Book> newBookUser2=new ArrayList<>();
         newBookUser2.add(books.get(3));
         newBookUser2.add(books.get(0));
         user2.setCompleted(completedUser2);
